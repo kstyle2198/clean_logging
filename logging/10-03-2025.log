@@ -83,3 +83,13 @@ Program ended successfully
 2025-10-03 14:17:49 - process.ps - ERROR - An error occurred: division by zero
 2025-10-03 14:17:49 - process.ps - INFO - Main function ended
 2025-10-03 14:17:49 - __main__ - INFO - Program ended successfully
+2025-10-03 14:25:15 - __main__ - INFO - Program started
+2025-10-03 14:25:15 - process.ps - INFO - Main function started
+2025-10-03 14:25:15 - process.ps - ERROR - An error occurred: division by zero
+2025-10-03 14:25:15 - process.ps - INFO - Main function ended
+2025-10-03 14:25:15 - __main__ - INFO - Program ended successfully
+2025-10-03 14:28:42 - __main__ - INFO - Program started
+2025-10-03 14:28:42 - process.ps - INFO - Main function started
+2025-10-03 14:28:42 - process.ps - ERROR - An error occurred: division by zero
+2025-10-03 14:28:42 - process.ps - INFO - Main function ended
+2025-10-03 14:28:42 - __main__ - INFO - Program ended successfully

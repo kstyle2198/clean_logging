@@ -1,3 +1,12 @@
+"""
+컬러 로그 시스템 모듈
+
+이 모듈은 Python의 logging 모듈을 확장하여 로그를
+- 파일에는 일반 텍스트 형태로 저장
+- 터미널에는 ANSI 컬러 코드가 적용된 메시지로 출력
+할 수 있도록 지원합니다.
+"""
+
 import os
 import logging
 import datetime as dt
@@ -15,6 +24,16 @@ RESET_COLOR = "\033[0m"
 
 
 class ColorFormatter(logging.Formatter):
+    """
+    로그 메시지에 ANSI 색상 코드를 적용하는 Formatter 클래스.
+
+    Methods
+    -------
+    format(record: logging.LogRecord) -> str
+        주어진 로그 레코드를 포맷팅하고,
+        로그 레벨에 따라 색상을 입혀 반환합니다.
+    """
+
     def format(self, record):
         log_color = LOG_COLORS.get(record.levelname, RESET_COLOR)
         message = super().format(record)
@@ -22,6 +41,24 @@ class ColorFormatter(logging.Formatter):
 
 
 def setup_logger(log_name: str, level=logging.DEBUG) -> logging.Logger:
+    """
+    지정한 이름과 레벨로 로거(Logger)를 생성하고 반환합니다.
+
+    - 로그는 `./logging/` 디렉터리에 일자별 파일로 저장됩니다.
+    - 터미널 출력은 ANSI 색상이 적용됩니다.
+
+    Parameters
+    ----------
+    log_name : str
+        로거의 이름 (ex: "my_app").
+    level : int, optional
+        로깅 레벨 (기본값: logging.DEBUG).
+
+    Returns
+    -------
+    logging.Logger
+        파일 및 컬러 콘솔 출력이 동시에 적용된 로거 객체.
+    """
     # create logger file folder 
     make_folder = "./logging/"
     os.makedirs(make_folder, exist_ok=True)
@@ -36,11 +73,11 @@ def setup_logger(log_name: str, level=logging.DEBUG) -> logging.Logger:
     file_formatter = logging.Formatter(
         '%(asctime)s - %(name)s - %(levelname)s - %(message)s',
         datefmt="%Y-%m-%d %H:%M:%S"
-        )
+    )
     color_formatter = ColorFormatter(
         '%(asctime)s - %(name)s - %(levelname)s - %(message)s',
         datefmt="%Y-%m-%d %H:%M:%S"
-        )
+    )
 
     # file handler
     file_handler = logging.FileHandler(filename, encoding="utf-8")
