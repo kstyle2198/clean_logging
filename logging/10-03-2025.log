@@ -1,0 +1,85 @@
+This is an error message
+This is a critical message
+This is an error message
+This is a critical message
+2025-10-03 13:45:42,184 - my_logger - ERROR - This is an error message
+2025-10-03 13:45:42,186 - my_logger - CRITICAL - This is a critical message
+2025-10-03 13:46:13,753 - my_logger - ERROR - This is an error message
+2025-10-03 13:46:13,754 - my_logger - CRITICAL - This is a critical message
+2025-10-03 13:46:37,933 - my_logger - INFO - This is an info message
+2025-10-03 13:46:37,934 - my_logger - ERROR - This is an error message
+2025-10-03 13:46:37,934 - my_logger - WARNING - This is a warning message
+2025-10-03 13:46:37,935 - my_logger - CRITICAL - This is a critical message
+This is an info message
+2025-10-03 14:02:05 - my_logger - INFO - This is an info message
+This is an error message
+2025-10-03 14:02:05 - my_logger - ERROR - This is an error message
+This is a warning message
+2025-10-03 14:02:05 - my_logger - WARNING - This is a warning message
+This is a critical message
+2025-10-03 14:02:05 - my_logger - CRITICAL - This is a critical message
+Main function started
+2025-10-03 14:02:05 - my_logger - INFO - Main function started
+An error occurred: division by zero
+2025-10-03 14:02:05 - my_logger - ERROR - An error occurred: division by zero
+Main function ended
+2025-10-03 14:02:05 - my_logger - INFO - Main function ended
+Main function started
+2025-10-03 14:02:30 - my_logger - INFO - Main function started
+An error occurred: division by zero
+2025-10-03 14:02:30 - my_logger - ERROR - An error occurred: division by zero
+Main function ended
+2025-10-03 14:02:30 - my_logger - INFO - Main function ended
+Main function started
+2025-10-03 14:03:03 - my_logger - INFO - Main function started
+An error occurred: division by zero
+2025-10-03 14:03:03 - my_logger - ERROR - An error occurred: division by zero
+Main function ended
+2025-10-03 14:03:03 - my_logger - INFO - Main function ended
+2025-10-03 14:05:06 - utils.setlogger - INFO - Main function started
+2025-10-03 14:05:06 - utils.setlogger - ERROR - An error occurred: division by zero
+2025-10-03 14:05:06 - utils.setlogger - INFO - Main function ended
+2025-10-03 14:05:20 - utils.setlogger - INFO - Main function started
+2025-10-03 14:05:20 - utils.setlogger - ERROR - An error occurred: division by zero
+2025-10-03 14:05:20 - utils.setlogger - INFO - Main function ended
+2025-10-03 14:07:27 - main - INFO - Main function started
+2025-10-03 14:07:27 - main - ERROR - An error occurred: division by zero
+2025-10-03 14:07:27 - main - INFO - Main function ended
+2025-10-03 14:07:51 - [main] - INFO - Main function started
+2025-10-03 14:07:51 - [main] - ERROR - An error occurred: division by zero
+2025-10-03 14:07:51 - [main] - INFO - Main function ended
+2025-10-03 14:10:23 - [main] - INFO - Program started
+2025-10-03 14:10:23 - [process.ps] - INFO - Main function started
+2025-10-03 14:10:23 - [process.ps] - ERROR - An error occurred: division by zero
+2025-10-03 14:10:23 - [process.ps] - INFO - Main function ended
+2025-10-03 14:10:23 - [main] - INFO - Program ended successfully
+2025-10-03 14:12:26 - main - INFO - Program started
+2025-10-03 14:12:26 - process.ps - INFO - Main function started
+2025-10-03 14:12:26 - process.ps - ERROR - An error occurred: division by zero
+2025-10-03 14:12:26 - process.ps - INFO - Main function ended
+2025-10-03 14:12:26 - main - INFO - Program ended successfully
+2025-10-03 14:13:20 - main - INFO - Program started
+2025-10-03 14:13:20 - process.ps - INFO - Main function started
+2025-10-03 14:13:20 - process.ps - ERROR - An error occurred: division by zero
+2025-10-03 14:13:20 - process.ps - INFO - Main function ended
+2025-10-03 14:13:20 - main - INFO - Program ended successfully
+2025-10-03 14:15:27 - main - INFO - Program started
+2025-10-03 14:15:27 - process.ps - INFO - Main function started
+2025-10-03 14:15:27 - process.ps - ERROR - An error occurred: division by zero
+2025-10-03 14:15:27 - process.ps - INFO - Main function ended
+2025-10-03 14:15:27 - main - INFO - Program ended successfully
+2025-10-03 14:16:08 - __main__ - INFO - Program started
+2025-10-03 14:16:08 - process.ps - INFO - Main function started
+2025-10-03 14:16:08 - process.ps - ERROR - An error occurred: division by zero
+2025-10-03 14:16:08 - process.ps - INFO - Main function ended
+2025-10-03 14:16:08 - __main__ - INFO - Program ended successfully
+Program started
+Main function started
+An error occurred: division by zero
+Main function ended
+Program ended successfully
+2025-10-03 14:17:49 - __main__ - INFO - Program started
+2025-10-03 14:17:49 - process.ps - INFO - Main function started
+2025-10-03 14:17:49 - process.ps - ERROR - An error occurred: division by zero
+2025-10-03 14:17:49 - process.ps - INFO - Main function ended
+2025-10-03 14:17:49 - __main__ - INFO - Program ended successfully
